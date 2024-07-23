@@ -88,7 +88,7 @@ Collate: config.R all_utils.R options.R distributions_inputList.R
         nimble-package.r QuadratureGrids.R zzz.R
 RoxygenNote: 7.2.3
 NeedsCompilation: yes
-Packaged: 2024-07-23 00:30:55 UTC; paciorek
+Packaged: 2024-07-23 00:38:05 UTC; paciorek
 Author: Perry de Valpine [aut],
   Christopher Paciorek [aut, cre],
   Daniel Turek [aut],
