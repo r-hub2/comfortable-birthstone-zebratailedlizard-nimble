@@ -90,7 +90,7 @@ Collate: config.R all_utils.R options.R distributions_inputList.R
         registration.R nimble-package.r zzz.R
 RoxygenNote: 7.3.2
 NeedsCompilation: yes
-Packaged: 2025-12-08 21:27:58 UTC; paciorek
+Packaged: 2025-12-09 00:34:35 UTC; paciorek
 Author: Perry de Valpine [aut],
   Christopher Paciorek [aut, cre],
   Daniel Turek [aut],
