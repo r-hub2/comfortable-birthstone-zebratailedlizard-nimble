@@ -1,3 +1,40 @@
+#              CHANGES IN VERSION 1.4.2 (March 2026)
+
+## USER LEVEL CHANGES
+
+- Improve efficiency of `findSamplersOnNodes`, which is used in finding
+samplers assigned to node(s) (PR #1614; thanks to 'hoxo-m').
+
+## DEVELOPER LEVEL CHANGES
+
+- Switch to using `R_getVar` and `R_getVarEx` in place of `Rf_findVar` and
+`Rf_findVarInFrame` in C++ code at request of CRAN (PR #1616).
+
+#              CHANGES IN VERSION 1.4.1 (February 2026)
+
+## USER LEVEL CHANGES
+
+- Add a new sampler to sample portions of a multivariate normal node when some 
+  elements are observed (i.e., data) and some elements are unknown. This 
+  sampler uses the exact conditional normal to sample from the posterior 
+  predictive distribution when the unknown elements have no dependent data nodes
+  (PR #1612).
+  
+- Add ability to change the MCMC thinning interval when continuing an MCMC
+  (PR #1609).
+  
+## BUG FIXES
+
+- Fix a bug in the conjugacy size processing system when dependent nodes 
+  (of the target conjugate node) themselves have multivariate parameters 
+  with a different size from the dependent node itself (PR #1605).
+  
+## DEVELOPER LEVEL CHANGES
+
+- Turn off an old work-around that prevented RStudio from hanging but 
+  which modified the global environment and no longer appears to be 
+  necessary (PR #1606).
+
 #              CHANGES IN VERSION 1.4.0 (December 2025)
 
 ## USER LEVEL CHANGES
